@@ -38,12 +38,12 @@
 			"акселерометр!"
 		],
 		"NoPowerDeliveryMessage": [
-			"No USB-PD IC",
-			"detected!"
+			"USB-PD IC",
+			"не найдено!"
 		],
-		"LockingKeysString": "LOCKED",
-		"UnlockingKeysString": "UNLOCKED",
-		"WarningKeysLockedString": "!LOCKED!"
+		"LockingKeysString": "ЗАБЛОК.",
+		"UnlockingKeysString": "РАЗБЛОК.",
+		"WarningKeysLockedString": "!ЗАБЛОК.!"
 	},
 	"characters": {
 		"SettingRightChar": "П",
@@ -141,7 +141,7 @@
 		},
 		"TemperatureUnit": {
 			"text2": [
-				"Единицы",
+				"Единицы изм.",
 				"температуры"
 			],
 			"desc": "Единицы измерения температуры (C=Цельcия | F=Фаренгейта)"
@@ -169,17 +169,17 @@
 		},
 		"AutoStart": {
 			"text2": [
-				"Авто",
-				"старт"
+				"Авто-старт",
+				"режим"
 			],
-			"desc": "Режим, в котором запускается паяльник при подаче питания (В=Выкл. | П=Пайка | О=Ожидание | К=Ожидание при комн. темп.)"
+			"desc": "Режим, в котором запускается паяльник при подаче питания (В=Выкл. | П=Пайка | О=Ожидание | К=Ожидание без пред. нагрева жала)"
 		},
 		"CooldownBlink": {
 			"text2": [
 				"Мигание t°",
 				"при остывании"
 			],
-			"desc": "Мигать температурой на экране охлаждения, пока жало еще горячее"
+			"desc": "Мигание температурой на экране после остановки нагрева, пока жало еще горячее"
 		},
 		"TemperatureCalibration": {
 			"text2": [
@@ -193,7 +193,7 @@
 				"Сброс",
 				"Настроек"
 			],
-			"desc": "Сброс настроек к значеням по умолчанию"
+			"desc": "Сброс настроек к значениям по умолчанию"
 		},
 		"VoltageCalibration": {
 			"text2": [
@@ -218,17 +218,17 @@
 		},
 		"QCMaxVoltage": {
 			"text2": [
-				"Мощность",
+				"Напряжение",
 				"питания"
 			],
-			"desc": "Мощность используемого источника питания"
+			"desc": "Максимальное напряжение используемого QC или PD источника питания"
 		},
 		"PDNegTimeout": {
                         "text2": [
                                 "PD",
-                                "timeout"
+                                "Тайм-аут"
                         ],
-                        "desc": "PD negotiation timeout in 100ms steps for compatibility with some QC chargers (0: disabled)"
+                        "desc": "Тайм-аут согласования PD с шагом 100 мс для совместимости с некоторыми зарядными устройствами QC (0: отключено)"
                 },
 		"PowerLimit": {
 			"text2": [
@@ -260,10 +260,10 @@
 		},
 		"PowerPulsePower": {
 			"text2": [
-				"Сила имп.",
+				"Power pulse",
 				"питания Вт"
 			],
-			"desc": "Сила импульса удерживающего от сна повербанк или другой источник питания"
+			"desc": "Сила импульса удерживающего от сна повербанк или другой источник питания (Ватт)"
 		},
 		"HallEffSensitivity": {
 			"text2": [
@@ -303,16 +303,16 @@
 		"PowerPulseWait": {
 			"text2": [
 				"Power pulse",
-				"wait time"
+				"таймаут"
 			],
-			"desc": "Time to wait before triggering every keep-awake pulse (x 2,5с)"
+			"desc": "Время между импульсами удерживающеми от сна повербанк или другой источник питания (x 2,5с)"
 		},
 		"PowerPulseDuration": {
 			"text2": [
 				"Power pulse",
-				"duration"
+				"длительность"
 			],
-			"desc": "Keep-awake-pulse duration (x 250мс)"
+			"desc": "Длительность импульса удерживающего от сна повербанк или другой источник питания (x 250мс)"
 		},
 		"LanguageSwitch": {
 			"text2": [
